@@ -1,0 +1,998 @@
+
+/* Here you can start styling. ^_^*/
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* Colors 
+    Light Yellow- rgb(250,249,218);
+    Yellow- rgb(246,198,96);
+    Orange- rgb(226,97,41);
+    Slate Grey- rgb(94,119,113);
+    Dark Brown- rgb(38,42,28);
+*/
+
+* {
+    box-sizing: border-box;
+  }
+
+/* Basics/Defaults */
+
+body {
+    font-size: 100%;
+    font-weight: 300;
+    color: rgb(80,80,80);
+    letter-spacing: 0.01em;
+    background-image: url("../img/white_wall_hash.png");
+    font-family: "Merriweather", serif; 
+    margin: 0 auto;
+    min-width: 960px;
+    }
+
+p {
+	line-height: 2em;
+	margin: 1em 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500; 
+	margin: 1.5rem 0rem 1rem 0rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 2.5em;
+    font-family: 'Limelight', sans-serif;
+    color: rgb(226,97,41);
+    margin: 0 auto;
+    max-width: 50vw;
+    text-align: center; 
+}
+
+h2 {
+	padding-bottom: 3px; 
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1em;
+    font-style:normal;
+    margin: 1em auto;
+    max-width: 50vw;
+    text-align: center;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: rgb(226,97,41);
+	padding-bottom: 1px;
+	color:rgb(226,97,41);
+}
+
+.btn{
+    background-color: transparent;
+    width: 50%;
+    display: block;
+    border:rgb(226,97,41) solid 2px;
+    padding: 1em;
+    border-radius: 0.5em;
+    color:  rgb(226,97,41);
+    transition: all 1s ease;
+}
+    
+.btn:hover {
+    background-color:  rgb(226,97,41);
+    color: rgb(246, 251, 255);
+    text-decoration: none;
+}
+
+.cat_head {
+    margin: 3em;
+}
+
+/* Navbar CSS */
+
+.navbar {
+    margin: 0;
+	padding:0;
+}
+
+.navbar-brand {
+    font-family: 'Limelight', sans-serif;
+}
+
+.navbar-nav {
+    font-family: 'Merriweather', serif;
+}
+
+#navbarNav {
+    width: 960px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: rgba(246,198,96,0.8);
+    text-align: right;
+    width: 100%;
+}
+
+/* Section One/Hero CSS */
+
+#hero {
+	background-image: url("../img/tbc_heroimg.png");
+    background-repeat: no-repeat;
+	background-size: cover; 
+	min-height: 80vh; 
+	padding-top: 12rem; 
+	color: white; 
+	padding-bottom: 1em; 
+}
+
+.hero-header {
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+#abt_hero {
+	background-image: url("../img/tbc_heroimg.png");
+    background-repeat: no-repeat;
+	background-size: cover; 
+	min-height: 80vh; 
+	padding-top: 12rem; 
+	color: white; 
+	padding-bottom: 1em; 
+}
+
+#menu_hero {
+	background-image: url("../img/tbc_menuheroimg.png");
+    background-repeat: no-repeat;
+	background-size: cover; 
+	min-height: 80vh; 
+	padding-top: 12rem; 
+	color: white; 
+	padding-bottom: 1em; 
+}
+
+#catering-hero {
+	background-image: url("../img/tbc_cateringhero.png");
+    background-repeat: no-repeat;
+	background-size: cover; 
+	min-height: 80vh; 
+	padding-top: 12rem; 
+	color: white; 
+	padding-bottom: 1em; 
+}
+
+.container {
+    padding-top: 4rem;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+/* About Us CSS */
+#abt {
+    padding: 2em 0;
+    margin: 1em 0;
+}
+
+.abt_container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 960px;
+    margin-bottom: 1em;
+}
+
+.flexbox_item {
+    margin: 10px;
+}
+
+.flexbox_item figcaption {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.flexbox_item .flex_img {
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.flexbox_item .flex_content {
+    height: 400px;
+    flex-grow: 1;
+}
+
+.flex_content p{
+    padding: 1em 0em 4em 0em;
+}
+
+/* Fan Favorites CSS */
+
+#fanfav {
+    background-color: rgb(38,42,28);
+    color:rgb(246, 251, 255);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#fanfav h3 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.fanfav_container {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+    width: 960px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.fanfav_container img {
+    width: 280px;
+}
+
+.fanfavitem {
+    background-color: white;
+    color: rgb(38,42,28);
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.fanfavitem .item1 {
+    max-height: 300px
+}
+
+.fanfavitem .item2 {
+    max-height: 300px
+}
+
+.fanfavitem .item3 {
+    max-height: 300px
+}
+
+/* Menu CSS */
+.menu{
+    margin: 2rem 0;
+}
+
+.menu-container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.menu-head {
+    text-align: center;
+    margin: 1em;
+}
+
+.menu-head h2{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.menu-head p{
+    font-weight: 300;
+    padding: 1.8rem 0;
+    font-family: 'Merriweather', serif;
+}
+
+.menu-btns{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-btn{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #ff9505;
+    display: block;
+    margin: 0 1rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.menu-btn::after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ff9505;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+
+.menu-btn:hover::after{
+    width: 100%;
+}
+.menu-btn:hover{
+    opacity: 0.8;
+}
+.active-btn{
+    color: rgb(0, 0, 0);
+}
+
+.food-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.food-item{
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+    margin: 0.6rem 0;
+    display: block;
+    animation: fadeIn 2s;
+    text-align: center;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.food-content{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+.food-name{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #ff9505;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.line{
+    width: 100px;
+    height: 3px;
+    background: #ff9505;
+}
+
+.food-price{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    text-align: right;
+}
+
+.center {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Catering Code */
+
+#cater {
+    padding: 2em 0;
+    margin: 1em 0;
+}
+
+.cater_container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.flexbox_item {
+    margin: 10px;
+}
+
+.flexbox_item figcaption {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.flexbox_item .cater_img {
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.flexbox_item .cater_content {
+    height: 400px;
+    flex-grow: 1;
+}
+
+
+/*Slideshow/Review Code */
+
+#reviewslider {
+    background-image: url("../img/tbc_reveiwimg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 2em;
+    padding-bottom: 2em;  
+    margin-top: 2em; 
+    margin-bottom: 2em; 
+}
+
+.mySlides1 {
+    display:none;
+    width: 960px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.mySlides1 h1 {
+    font-family: 'Merriweather', serif; 
+    font-size: 2em;
+    text-align: center;
+    color:rgb(246, 251, 255); 
+}
+
+.mySlides1 h2 {
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-size: 1.5em;
+    text-align: center;
+    color:rgb(246, 251, 255); 
+    padding: 1em 0;
+}
+
+.review_src {
+    font-size: 1em;
+    color: rgb(246,198,96);
+}
+
+.review_src:hover {
+    text-decoration: none;
+    color: rgb(226,97,41);
+
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer;
+    color: white;
+}
+
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0;
+}
+
+.mySlides2 {
+    width: 100%;
+}
+
+/* Contact Hero CSS */
+#hero-contact {
+    background-image: url("../img/tbc_heroimg.png");
+    background-repeat: no-repeat;
+	background-size: cover; 
+	max-height: 80vh; 
+}
+
+.hero_flexcontainer {
+    margin: 0 auto;
+    width: 960px;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 12em;
+}
+
+.contact_flexitem {
+    width: 150px; 
+    margin: 2em auto;
+    color: rgb(246, 251, 255);
+    font-family: 'Mexrriweather', serif;
+    text-align: center;
+}
+
+.contact_flexitem h1 {
+    font-family: 'Merriweather', serif;
+    color:rgb(246, 251, 255);
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.contact_head {
+    padding-top: 3em;
+    color: white;
+}
+
+/* Contact Form CSS */
+.form_flexcontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 960px;
+    margin-bottom: 1em;
+}
+
+.formflexitem {
+    margin: 1em;
+}
+
+.form-text {
+    flex-shrink: 0;
+    font-family: 'Merriweather', serif;
+    max-width: 40%;
+}
+
+.form_info {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.store_hours {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.form-text h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    align-items: flex-start;
+    color: rgb(226,97,41);
+    font-weight: bold;
+}
+
+.form {
+    flex-grow: 1;
+    margin: 2em;
+    padding-top: 5em;
+} 
+
+.form_row1 {
+    display: inline;
+}
+
+.formitem {
+    margin: 1em;
+}
+
+form {
+	margin: 2em 0;
+}
+
+label {
+	color: rgb(226,97,41);
+	font-weight: 500; 
+	display: block;
+}
+
+input, textarea {
+	color: rgb(226,97,41);
+	border: none;
+	border-bottom:rgb(226,97,41) solid 2px;
+	background-color: rgba(226,97,41,0.1);
+	display: block;
+	width: 100%;
+	margin-bottom: 40px; 
+}
+
+.formbutton {
+	background-color: white;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	border:rgb(226,97,41) solid 2px;
+	padding: 1em;
+	border-radius: 2em;
+	color: rgb(226,97,41);
+	transition: all 1s ease;
+}
+
+.formbutton:hover {
+	background-color: rgb(226,97,41);
+	color: white;
+}
+
+/*CTA Code*/
+#cta {
+    background-color: rgb(246,198,96);
+    color: white;
+
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;    
+	padding-bottom: 1rem; 
+    padding-top: 3rem; 
+    
+}
+
+#cta h2 {
+    margin: 0 auto;
+    max-width: 70vw;
+    text-align: left; 
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cta_content {
+    margin: 0 auto;
+    width: 960px;
+    text-align: left; 
+}
+
+.ctabtn {
+    background-color: rgb(246, 251, 255);;
+    display: block;
+    border:rgb(246, 251, 255) solid 3px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color:  rgb(226,97,41);
+    transition: all 1s ease;
+    text-decoration: none;
+    font-size: 1em;
+}
+    
+.ctabtn:hover {
+    background-color:  rgb(246,198,96);
+    color: rgb(246, 251, 255);
+    text-decoration: none;
+}
+
+/* Timeline Code*/
+#timeline {
+    margin: 0 auto;
+    width: 960px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+.timeline_items {
+    background-color: #fff;
+}
+
+.timeline_component {
+    margin: 0 20px 20px 20px;
+}
+
+.date_right {
+    text-align: right;
+}
+
+.timeline_middle {
+    position: relative;
+    background-color: rgb(246,198,96);
+}
+
+.timeline_point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: rgb(246,198,96);
+    border-radius: 50px;
+}
+
+.content_bg {
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.timeline_content {
+    display: inline;
+}
+
+.timeline_descript {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+
+/* Footer Code */
+
+footer {
+    background-color: rgb(80,80,80);
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0;
+}
+
+footer h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.nav-container {
+    width: 960px;
+    margin: 0 auto; 
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-contact {
+    text-align: right;
+    padding: 1em 0 1em 0;
+}
+
+.nav-hours {
+    text-align: right;
+    padding: 1em 0 1em 0;
+}
+
+.nav-tag {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.5em;
+    padding: 1em;
+}
+
+
+/* Responsiveness CSS */
+
+@media screen and (min-width: 992px){
+    .menu-head p{
+        width: 50%;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/*sm  ≥576px*/
+@media (min-width: 576px) {
+	/*h1{color:orange;}*/
+    .food-item{
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 1rem;
+    }
+    .food-content{
+        padding: 0;
+    }
+}
+
+/*md  ≥800px*/
+@media (min-width: 768px) {
+	/*h1{color:yellow;}*/
+    .menu-head p{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    /* Hero Section CSS */
+    #hero {
+        width: 100vw;
+    }
+
+    .welcome {
+       width: 50%;
+    }
+
+    .hero-container {
+        width:50%;
+    }
+
+    /* About Section CSS */
+    .abt_container {
+      flex-direction: column;
+    }
+
+    .abt_container p{
+        width: 50%;
+    }
+
+    #abt {
+        width: 50%;
+    }
+
+    /* Fan Favorites Section CSS */
+
+    #fanfav {
+        width: 100vw;
+    }
+
+    .fanfav_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cat_head {
+        width: 50%;
+    }
+
+    /* Menu Section CSS */
+
+    .menu-container .menu_head {
+       width: 50vw;
+    }
+
+    .menu-btns {
+        display: inline;
+    }
+
+    .food-items {
+        width: 50%;
+    }
+
+ /* Cater Section CSS */
+
+    #cater {
+        width: 50%;
+    }
+
+    .center {
+        margin: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .cater_container {
+        flex-direction: column;
+    }
+
+    .cater_container p{
+        width: 50%;
+    }
+    
+    /* Slider CSS */
+
+    .w3-display-container {
+        width: 90vw;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mySlides1 {
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 80%;
+    }
+
+    .w3-center {
+        width: 100vw;
+    }
+
+    /* Timeline CSS */
+
+    #timeline {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr;
+    }
+
+    .timeline_component {
+        width: 50%;
+    }
+
+    .timeline_point {
+        width: 0%;
+    }
+
+    /* CTA CSS */
+    #cta {
+        width: 100vw;
+    }
+
+    #cta h2 {
+        text-align: center; 
+    }
+
+    .cta_content {
+            width: 100vw;
+            padding: 1em;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    }
+
+    /* Footer CSS */
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .nav-contact{
+        text-align: center;
+    }
+
+    .nav-hours {
+        text-align: center;
+    }
+
+    /* Contact CSS */
+
+    #hero-contact {
+        max-height:fit-content; 
+    }
+
+    .hero_flexcontainer {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        padding-top: 2em;
+    }
+
+    .contact_head {
+        width: 50%;
+    }
+
+    .form_flexcontainer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .form-text {
+        text-align: center;
+    }
+
+    .form {
+        text-align: center;
+        flex-grow: 0;
+        width: 80vw;
+    }
+
+
+
+    
+  }
+
+/*lg  ≥992px*/
+@media (min-width: 992px) {
+	/*h1{color:green;}*/
+    .menu-head p{
+        width: 50%;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+}
